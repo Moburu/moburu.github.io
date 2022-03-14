@@ -1,0 +1,17 @@
+.Projects h1 {
+    margin-bottom: 50px;
+}
+
+.project-holder {
+    margin: auto;
+    width: auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.project {
+    margin: 0px 10px 10px 0px;
+}

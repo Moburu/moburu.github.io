@@ -1,0 +1,25 @@
+.Skills {
+    width: 60%;
+    margin: auto;
+}
+
+
+.skill-grid {
+    height: 700px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.skill {
+    width: clamp(200px, 25vw, 400px);
+    height: clamp(30px, 3.75vw, 60px);
+    padding: 10px;
+    margin: 10px;
+    color: rgb(148, 172, 196);
+    background-color: rgb(54, 62, 70);
+    border-radius: 25px;
+    font-size: clamp(20px, 2.5vw, 40px);
+}

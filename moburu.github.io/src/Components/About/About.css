@@ -1,0 +1,31 @@
+.About {
+    display: flex;
+    align-items: center;
+}
+
+.About p {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+    flex: 50%;
+}
+
+.intro-p {
+    display: inline-block;
+    text-align: justify;
+}
+
+.intro-img {
+    flex: 50%;
+}
+
+.programmer {
+    height: auto;
+    width: clamp(200px, 45vw, 850px);
+}
