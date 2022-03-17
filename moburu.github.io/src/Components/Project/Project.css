@@ -1,6 +1,6 @@
 .Project {
-    width: clamp(100px, 40vw, 600px);
-    height: clamp(60px, 24vw, 360px);
+    width: clamp(300px, 40vw, 600px);
+    height: clamp(240px, 24vw, 360px);
     overflow: hidden;
     margin: auto;
     border-radius: 5px;

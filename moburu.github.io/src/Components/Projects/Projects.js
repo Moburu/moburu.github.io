@@ -23,6 +23,7 @@ class Projects extends Component {
     render() {
         return (
             <div className='Projects'>
+                <a className='anchor' id='projects'></a>
                 <h1>Projects</h1>
                 <div className='project-holder'>
                     <Project

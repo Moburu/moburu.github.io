@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: clamp(36px, 2.769vw + 19.385px, 72px);
 }
 
 p {

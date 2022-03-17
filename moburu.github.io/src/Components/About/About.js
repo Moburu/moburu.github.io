@@ -6,7 +6,7 @@ class About extends Component {
     state = {  }
     render() {
         return (
-            <div className="About">
+            <div id="about" className="About">
                 <div className='intro'>
                     <h1 className="intro-header">Hi! I'm Steven.</h1>
                     <div className='intro-p'>

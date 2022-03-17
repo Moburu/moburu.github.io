@@ -6,6 +6,7 @@ class Skills extends Component {
     render() {
         return (
             <div className='Skills'>
+                <a class='anchor' id='skills'></a>
                 <h1>Skills</h1>
                 <div className='skill-grid'>
                     <div className='skill'>HTML/CSS</div>

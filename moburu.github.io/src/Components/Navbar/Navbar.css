@@ -1,19 +1,34 @@
 .Navbar {
     background-color: rgb(54, 62, 70);
-    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .Navbar ul {
     margin: 0;
-    padding-left: 10px;
+    padding-right: 20px;
     height: 60px;
     display: flex;
     align-items: center;
+    font-size: clamp(18px, 0.462vw + 15.231px, 24px);
 }
 
-.links li, h3 {
+.Navbar h2 {
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.Navbar li {
     list-style-type: none;
-    margin: 8px;
+    margin-right: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .Navbar a:link {
@@ -34,4 +49,70 @@
 .Navbar a:active {
     color: antiquewhite;
     text-decoration: none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 901px) {
+    .Navbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .Navbar h2 {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .Navbar {
+        flex-direction: column;
+    }
+
+    .toggle-button {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Navbar .links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: -5px;
+    }
+
+    .Navbar .links.active {
+        display: flex;
+    }
+
+    .Navbar .links li {
+        text-align: center;
+        width: 100%;
+        background-color: rgb(54, 62, 70);
+        z-index: 1;
+        padding-bottom: 2px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #last-link {
+        padding-bottom: 15px;
+    }
 }

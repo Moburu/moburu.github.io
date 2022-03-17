@@ -4,21 +4,22 @@
 }
 
 .About p {
-    margin-left: 2vw;
-    margin-right: 2vw;
+    font-size: clamp(18px, 0.462vw + 15.231px, 24px);
 }
 
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 900px;
     flex: 50%;
 }
 
 .intro-p {
     display: inline-block;
     text-align: justify;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro-img {
@@ -28,4 +29,20 @@
 .programmer {
     height: auto;
     width: clamp(200px, 45vw, 850px);
+}
+
+@media screen and (max-width: 600px) {
+    .About {
+        flex-direction: column-reverse;
+    }
+
+    .intro {
+        height: px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .intro {
+        height: 950px;
+    }
 }
