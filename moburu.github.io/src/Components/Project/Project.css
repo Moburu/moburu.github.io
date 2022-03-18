@@ -1,8 +1,8 @@
 .Project {
     width: clamp(300px, 40vw, 600px);
     height: clamp(240px, 24vw, 360px);
-    overflow: hidden;
     margin: auto;
+    position: relative;
     border-radius: 5px;
     background-color: rgb(51, 51, 51);
 }
@@ -18,7 +18,8 @@
 .project-card {
     border-radius: 5px;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0px;
     opacity: 1;
     transition: all .2s ease-in-out;
     margin-top: -250px;
