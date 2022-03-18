@@ -1,5 +1,5 @@
 .Projects h1 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .anchor {
@@ -11,7 +11,7 @@
 
 .project-holder {
     margin: auto;
-    width: clamp(300px, 100vw, 1200px);
+    width: 100%;
     display: grid;
     gap: 30px;
 }
@@ -20,15 +20,15 @@
     margin: 0px 10px 10px 0px;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
     .project-holder {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .project-holder {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;

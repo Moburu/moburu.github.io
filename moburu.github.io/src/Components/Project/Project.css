@@ -1,14 +1,17 @@
 .Project {
+    overflow: hidden;
     width: clamp(300px, 40vw, 600px);
     height: clamp(240px, 24vw, 360px);
     margin: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5px;
     background-color: rgb(51, 51, 51);
 }
 
 .Project h2 {
-    padding-top: 75px;
 }
 
 .Project h3 {
@@ -16,13 +19,14 @@
 }
 
 .project-card {
+    width: clamp(300px, 40vw, 600px);
+    height: clamp(240px, 24vw, 360px);
     border-radius: 5px;
-    width: 100%;
     position: absolute;
     top: 0px;
+    left: 0px;
     opacity: 1;
-    transition: all .2s ease-in-out;
-    margin-top: -250px;
+    transition: opacity .2s ease-in-out;
 }
 
 .hover-text {
